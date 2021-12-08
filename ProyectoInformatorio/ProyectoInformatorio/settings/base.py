@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app',
 ]
 
 MIDDLEWARE = [
@@ -53,10 +54,16 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'ProyectoInformatorio.urls'
 
+TEMPLATES_DIR = os.path.join(os.path.dirname(BASE_DIR), 'app.templates')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [os.path.join(os.path.dirname(BASE_DIR),'templates')],
+=======
+        'DIRS': [TEMPLATES_DIR],
+>>>>>>> 8c8ffb2b5967be44dad1b93313501a51267a1b7e
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

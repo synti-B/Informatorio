@@ -59,7 +59,11 @@ TEMPLATES_DIR = os.path.join(os.path.dirname(BASE_DIR), 'app.templates')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
+        'DIRS': [os.path.join(os.path.dirname(BASE_DIR),'templates')],
+=======
         'DIRS': [TEMPLATES_DIR],
+>>>>>>> 8c8ffb2b5967be44dad1b93313501a51267a1b7e
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -108,9 +112,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-ar'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Argentina/Buenos_Aires'
 
 USE_I18N = True
 

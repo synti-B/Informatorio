@@ -6,51 +6,181 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/Proyecto/ProyectoInformatorio/static/estilo.css' %}">
+    <link rel="stylesheet" href="{% static '/estilo.css' %}">
     <title>Document</title>
 </head>
 <body>
-    
-    <section class="cabecera">
-        <div>
-            <a href="#">Menu Fijo</a>
-            <a href="#">Login</a>
+    <header class="header">
+        <div id="encabezado">
+            <div id=logo>
+                LOGO AQUI
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="#" class="enlace">Lorem</a></li>
+                    <li><a href="#" class="enlace">ipsum</a></li>
+                    <li><a href="#" class="enlace">dolor</a></li>
+                    <li><a href="#" class="enlace">sit</a></li>
+                    <li><a href="#" class="enlace">amet</a></li>
+                </ul>
+            </div>
         </div>
+    </header>
+    <!--Posts-->
+    <section id="principal">
+        <section id="publicaciones">
+            <article class="post">
+                <a href="#" class="enlace-post">
+                    <h2 class="titulo-post">Noticia 1</h2>
+                </a>
+                <img src="assets/img/david-marcu-78A265wPiO4-unsplash.jpg" class="img-post">
+                <p>
+                    <strong>Por: </strong><span class="datos-publicaciones">Micaela Agudo</span>
+                    &nbsp; &nbsp;
+                    <strong>Fecha: </strong><span class="datos-publicaciones">"Inserte fecha acá"</span>
+                </p>
+                <p class="parrafo-post">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quasi rerum perferendis error nesciunt praesentium sunt minus rem eum quaerat dicta facilis nisi sit totam ab inventore accusantium delectus, eos culpa illum!
+                </p>
+
+                <a href="" class="leer-mas">Leer más...</a> &nbsp; &nbsp;
+                <span class="num-comentarios">XX comentarios</span> <!--num de comentarios-->
+            </article>
+
+            <article class="post">
+                <a href="#" class="enlace-post">
+                    <h2 class="titulo-post">Noticia 2</h2>
+                </a>
+                <img src="assets/img/jay-mantri-TFyi0QOx08c-unsplash.jpg" class="img-post">
+                <p>
+                    <strong>Por: </strong><span class="datos-publicaciones">Guillermina Mas                    </span>
+                    &nbsp; &nbsp;
+                    <strong>Fecha: </strong><span class="datos-publicaciones">"Inserte fecha acá"</span>
+                </p>
+                <p class="parrafo-post">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quasi rerum perferendis error nesciunt praesentium sunt minus rem eum quaerat dicta facilis nisi sit totam ab inventore accusantium delectus, eos culpa illum!
+                </p>
+
+                <a href="" class="leer-mas">Leer más...</a> &nbsp; &nbsp;
+                <span class="num-comentarios">XX comentarios</span>
+            </article>
+
+            <article class="post">
+                <a href="#" class="enlace-post">
+                    <h2 class="titulo-post">Noticia 3</h2>
+                </a>
+                <img src="assets/img/kunal-shinde--f0YLss50Bs-unsplash.jpg" class="img-post">
+                <p>
+                    <strong>Por: </strong><span class="datos-publicaciones">Ferran Sarmiento</span>
+                    &nbsp; &nbsp;
+                    <strong>Fecha: </strong><span class="datos-publicaciones">"Inserte fecha acá"</span>
+                </p>
+                <p class="parrafo-post">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quasi rerum perferendis error nesciunt praesentium sunt minus rem eum quaerat dicta facilis nisi sit totam ab inventore accusantium delectus, eos culpa illum!
+                </p>
+
+                <a href="" class="leer-mas">Leer más...</a> &nbsp; &nbsp;
+                <span class="num-comentarios">XX comentarios</span>
+            </article>
+
+            <article class="post">
+                <a href="#" class="enlace-post">
+                    <h2 class="titulo-post">Noticia 4</h2>
+                </a>
+                <img src="assets/img/robert-lukeman-_RBcxo9AU-U-unsplash.jpg" class="img-post">
+                <p>
+                    <strong>Por: </strong><span class="datos-publicaciones">Jose Ignacio Gimeno</span>
+                    &nbsp; &nbsp;
+                    <strong>Fecha: </strong><span class="datos-publicaciones">"Inserte fecha acá"</span>
+                </p>
+                <p class="parrafo-post">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quasi rerum perferendis error nesciunt praesentium sunt minus rem eum quaerat dicta facilis nisi sit totam ab inventore accusantium delectus, eos culpa illum!
+                </p>
+
+                <a href="" class="leer-mas">Leer más...</a> &nbsp; &nbsp;
+                <span class="num-comentarios">XX comentarios</span>
+            </article>
+
+            <article class="post">
+                <a href="#" class="enlace-post">
+                    <h2 class="titulo-post">Noticia 5</h2>
+                </a>
+                <img src="assets/img/david-marcu-78A265wPiO4-unsplash.jpg" class="img-post">
+                <p>
+                    <strong>Por: </strong><span class="datos-publicaciones">Maria Candelaria Cazorla                    </span>
+                    &nbsp; &nbsp;
+                    <strong>Fecha: </strong><span class="datos-publicaciones">"Inserte fecha acá"</span>
+                </p>
+                <p class="parrafo-post">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quasi rerum perferendis error nesciunt praesentium sunt minus rem eum quaerat dicta facilis nisi sit totam ab inventore accusantium delectus, eos culpa illum!
+                </p>
+
+                <a href="" class="leer-mas">Leer más...</a> &nbsp; &nbsp;
+                <span class="num-comentarios">XX comentarios</span>
+            </article>
+
+            <div id="paginacion">
+                <p>Anteriores publicaciones &nbsp; &nbsp; <a href="" class="enlace-paginacion">Siguientes publicaciones</a></p>
+            </div>
+        </section>
+
+        <!--Sidebar-->
+        <!--Cuadro de busqueda-->
+        <section id="sidebar">
+            <section id="buscar">
+                <h2 class="encabezado-sidebar">Buscar</h2>
+                <form>
+                    <input type="text" name="buscar" placeholder="buscar">
+                    <button class="boton">Ok</button>
+                </form>
+            </section>
+
+            <!--Categorias-->
+
+            <section id="categorias">
+                <h2 class="encabezado-sidebar">Categorias</h2>
+                <a href="" class="enlace-sidebar">Lorem, ipsum dolor.</a>
+                <a href="" class="enlace-sidebar">Dolor sit amet.</a>
+                <a href="" class="enlace-sidebar">Adipisicing elit.</a>
+                <a href="" class="enlace-sidebar">Debitis dolore voluptatem</a>
+            </section>
+
+            <section id="ultimos-post">
+                <h2 class="encabezado-sidebar">Ultimos posts</h2>
+                <a href="" class="enlace-sidebar">
+                    <h4>Noticia 5</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni dolores nesciunt.</p>
+                </a>
+
+                <a href="" class="enlace-sidebar">
+                    <h4>Noticia 4</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni dolores nesciunt.</p>
+                </a>
+
+                <a href="" class="enlace-sidebar">
+                    <h4>Noticia 3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni dolores nesciunt.</p>
+                </a>
+
+                <a href="" class="enlace-sidebar">
+                    <h4>Noticia 2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni dolores nesciunt.</p>
+                </a>
+
+                <a href="" class="enlace-sidebar">
+                    <h4>Noticia 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni dolores nesciunt.</p>
+                </a>
+
+            </section>
+        </section>
     </section>
 
-    <section class="cuerpo">
-        <div class="blogs">
-            <h3>blogs recientes</h3>
-        </div>
-    </section>
-
-    <section>
-
-        <div>
-            <p>imagen</p>
-        </div>
-
-        <div class="articulo2">
-            <p>articulo2</p>
-        </div>
-
-        <div>
-            <p>articulo3</p>
-        </div>
-        
-    </section>
-        <div>
-
-        </div>
-    <section>
-        <div>
-
-        </div>
-    </section>
-    <h2> Este esta es mi primera pagina </h2>
+    <footer>
+        <h2>Aqui va la info, redes sociales y cualquier cosa que quieran agregar</h2>
+    </footer>
 </body>
 
-<footer>
 
-</footer>
 </html>

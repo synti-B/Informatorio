@@ -14,3 +14,20 @@ class Post(models.Model):
     last_modified= models.DateTimeField(auto_now=True)
     published_date= models.DateTimeField(null=True, blank=True)
     categorias= models.ManyToManyField('category', related_name='posts')
+
+    def publish(self):
+            self.published_date = timezone.now()
+            self.save()
+
+    def approve_comments(self):
+        return self.comments.filter(approved_comment=True)
+
+    def get_absolute_url(self):
+        #return reverse('apps.blog:blog_detail', args=(str(self.id)))
+        return reverse("apps.blog:blog_detail",kwargs={'id':self.pk})
+
+
+    def __str__(self):
+        return self.title
+    
+    

@@ -1,5 +1,6 @@
 from django.urls import path
 from.views import home, logueo, post , nuevologin
+
 urlpatterns = [
     path('', home, name="home"),
     path('logueo/', logueo, name="logueo"),

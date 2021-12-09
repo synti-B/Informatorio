@@ -10,3 +10,134 @@
         <h2>logueo</h2>
     </body>
     </html>
+    
+<body>
+    <header>
+        <div class="logo">
+            <h2>logo</h2>
+        </div>
+        <div class="box">
+            <div id="inicio">Inicio</div>
+            <div id="objetivo">Objetivos</div>
+            <div id="noticiasC">Noticias del chaco</div>
+            <div id="noticiasI">Internacional</div>
+            <div id="contacto">Contacto</div>
+            <div id="usuario">Crear usuario</div>
+            <div id="logeo">Logueo</div>
+        </div>
+    </header>
+    <main>
+        <nav class="nav-main">
+            <div class="post">
+                <img src="{% static 'img/naturaleza.jpg' %}" alt="post naturaleza">
+            </div>
+            <div id="texto-post">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorum
+                    voluptatum ipsum dignissimos eveniet sed qui quisquam esse aut fuga corporis, molestias
+                    suscipit unde enim ex odit a modi quae.</p>
+            </div>
+            <div class="infografia"> <img src="{% static 'img/infografia.jpg' %}" alt="infografia"></div>
+            <div class="text-inf"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tempora enim autem distinctio odit itaque modi, laboriosam accusantium repellendus optio molestias
+                voluptatibus fugit
+                animi consequatur eos provident voluptate commodi, temporibus doloribus?
+            </div>
+
+            <div class="videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/345IxGgjF9s"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+        </nav>
+    </main>
+    <footer>
+        <div><img id="redes" src="{% static 'img/redes.png' %}" alt="redes"></div>
+    </footer>
+</body>
+</html>
+
+
+
+css
+.logo{
+    background: #5DEAA8;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 10%;
+       
+  }
+  
+  .box {
+      display: flex;
+      justify-content: flex-start;  
+      background-color: rgb(185, 224, 224);
+      
+    }
+  .post{
+      background-color: rgb(198, 140, 223);
+    
+  
+  }
+  .infografia{
+      background-color: rgb(160, 187, 251);
+  }
+  .videos{
+      background-color: rgb(245, 109, 136)
+  }
+    #inicio {
+       background-color:#dff566;
+      flex: 0.1;
+    }
+  
+    #objetivo {
+      background-color: rgb(226, 195, 116);
+      flex: 0.1;
+    }
+    #text-post{
+        margin-left: 50%;
+        text-align: center;
+        color: orchid;
+    }
+  
+    #noticiasC {
+      background-color: rgb(226, 195, 116);
+      flex: 0.2;
+    }
+    #noticiasI {
+      
+      background-color: rgb(226, 195, 116);
+      flex: 0.1;
+    }
+    #contacto {
+      background-color: rgb(226, 195, 116);
+      flex: 0.1;
+    }
+    #usuario {
+      background-color: rgb(226, 195, 116);
+      flex: 0.1;
+    }
+    #logueo {
+      background-color: rgb(226, 195, 116);
+      flex: 0.1;
+  
+    }
+  body{
+  font-family: 'Roboto', sans-serif;
+  
+  }
+  #redes{
+      background-repeat: repeat-x;
+  }
+  footer{
+          background-color:rgb(238, 163, 51);
+         
+  
+    }
+  

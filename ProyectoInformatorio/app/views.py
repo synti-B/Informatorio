@@ -4,6 +4,10 @@ from .models import Post
 # Create your views here.
 
 def home(request):
+    post_list= Post.objects.all().order_by('created_on')
+    context = {
+        'posts': post_list,
+    }
     return render(request, 'app/home.html', {} )
 
 def logueo(request):

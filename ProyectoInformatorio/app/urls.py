@@ -1,10 +1,11 @@
 from django.urls import path
-from.views import home, logueo, post , nuevologin
+from.views import home, loginView, logout_vista, post , registro
 
 urlpatterns = [
     path('', home, name="home"),
-    path('logueo/', logueo, name="logueo"),
+    path('logout_vista/', logout_vista, name="logout_vista"),
     path('post/', post, name="post"),
-    path('nuevologin/', nuevologin, name="nuevologin"),
+    path('login/', loginView, name="login"),
+     path('registro/', registro, name="registro"),
 
 ]

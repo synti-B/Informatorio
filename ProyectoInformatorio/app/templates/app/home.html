@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/estilo.css' %}">
-<<<<<<< HEAD
-    <title>Document</title>
-=======
-    <title>Blog</title>
->>>>>>> 1ea9f356d81a6992b11db01138dfe962fcc217ad
-</head>
-<body>
+{% extends 'base.html' %}
+{%  load static %}
+{%  block title %}
+inicio 
+{% endblock title %}
+{% block contenido %}
     <header class="header">
         <div id="encabezado">
             <div id=logo>
@@ -26,7 +16,7 @@
                     <li><a href="#" class="enlace">ipsum</a></li>
                     <li><a href="#" class="enlace">dolor</a></li>
                     <li><a href="#" class="enlace">sit</a></li>
-                    <li><a href="#" class="enlace">amet</a></li>
+                    <li><a href="{% url 'login' %}" class="enlace">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -184,10 +174,4 @@
     <footer>
         <h2>Aqui va la info, redes sociales y cualquier cosa que quieran agregar</h2>
     </footer>
-</body>
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 1ea9f356d81a6992b11db01138dfe962fcc217ad
-</html>
+    {% endblock contenido %}

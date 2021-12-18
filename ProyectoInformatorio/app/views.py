@@ -1,6 +1,8 @@
-from django.shortcuts import render, redirect, get_object_or_404,reverse
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post
+from .models import *
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.forms import UserCreationForm
 from django.core.exceptions import ObjectDoesNotExist
 from .forms import RegistroFormulario, UsuarioLoginFormulario
 # Create your views here.
@@ -34,26 +36,22 @@ def loginView(request):
 
 	return render(request, 'app/login.html', context)
 
-def registro(request):
-
-	titulo = 'Crear una Cuenta'
-	if request.method == 'POST':
-		form = RegistroFormulario(request.POST)
-		if form.is_valid():
-			form.save()
-			return redirect('login')
-	else:
-		form = RegistroFormulario()
+def register(request):
+	titulo = 'register'
+	form = UsuarioLoginFormulario(request.POST or None)
+	if form.is_valid():
+		username = form.cleaned_data.get("username")
+		password = form.cleaned_data.get("password")
+		usuario = authenticate(username=username, password=password)
+		login(request, usuario)
+		return redirect('home')
 
 	context = {
-
 		'form':form,
-		'titulo': titulo
-
+		'titulo':titulo
 	}
 
-	return render(request, 'registro.html', context)
-
+	return render(request, 'app/register.html', context)
 
 def logout_vista(request):
 	logout(request)

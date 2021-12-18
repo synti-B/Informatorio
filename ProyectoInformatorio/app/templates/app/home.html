@@ -1,22 +1,31 @@
-{% extends 'base.html' %}
-{%  load static %}
-{%  block title %}
-inicio 
-{% endblock title %}
-{% block contenido %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/estilo.css' %}">
+    <link rel="icon" sizes="80x80" href="{% static 'img/logo.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"><link rel="icon" href="{% static '/img/header.jpeg' %}">
+    <title>Document</title>
+    <title>Blog</title>
+
+</head>
+<body>
     <header class="header">
         <div id="encabezado">
             <div id=logo>
-                LOGO AQUI
+                <img width="150px" height="150px" src="{% static '/img/logo.png' %}" alt="logo">
             </div>
 
             <div id="menu">
                 <ul>
-                    <li><a href="#" class="enlace">Lorem</a></li>
-                    <li><a href="#" class="enlace">ipsum</a></li>
-                    <li><a href="#" class="enlace">dolor</a></li>
-                    <li><a href="#" class="enlace">sit</a></li>
-                    <li><a href="{% url 'login' %}" class="enlace">Login</a></li>
+                    <li><a href="#" class="enlace">Inicio</a></li>
+                    <li><a href="#" class="enlace">Objetivos</a></li>
+                    <li><a href="{% url 'login' %}" class="enlace">Logueo</a></li>
+                    <li><a href="{% url 'register' %}" class="enlace">Creá tu cuenta</a></li>
                 </ul>
             </div>
         </div>
@@ -171,7 +180,10 @@ inicio
         </section>
     </section>
 
-    <footer>
-        <h2>Aqui va la info, redes sociales y cualquier cosa que quieran agregar</h2>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div>
+              <p>&copy; 2021 Company, Inc</p></div>
     </footer>
-    {% endblock contenido %}
+</body>
+
+</html>
